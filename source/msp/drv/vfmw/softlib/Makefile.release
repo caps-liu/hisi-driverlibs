@@ -1,0 +1,43 @@
+#===============================================================================
+# export variables
+#===============================================================================
+ifeq ($(CFG_HI_EXPORT_FLAG),)
+    ifneq ($(KERNELRELEASE),)
+    KERNEL_DIR := $(srctree)
+
+    SDK_DIR := $(KERNEL_DIR)/../../../..
+    else
+    SDK_DIR := $(CURDIR)/../../../../..
+    endif
+
+include $(SDK_DIR)/base.mak
+endif
+
+ifeq ($(CFG_HI_CHIP_TYPE),hi3712)
+PRODUCT_DIR = HiX6V300
+else
+PRODUCT_DIR = HiX5HD
+endif
+
+ifeq ($(CFG_HI_VFMW_DECODE_CAPABILITY),SD_ONLY)
+CFG_DIR = SD_ONLY
+endif
+ifeq ($(CFG_HI_VFMW_DECODE_CAPABILITY),HD_SIMPLE)
+CFG_DIR = HD_SIMPLE
+endif
+ifeq ($(CFG_HI_VFMW_DECODE_CAPABILITY),HD_FULL)
+CFG_DIR = HD_FULL
+endif
+
+all: 
+	echo "make over."
+
+install:
+	echo "intall over"
+	cp $(PRODUCT_DIR)/$(CFG_DIR)/hi_svdec.ko.save $(MODULE_DIR)/hi_svdec.ko
+	
+uninstall:
+	echo "rm hi_svdec.ko success!"
+	rm -f $(MODULE_DIR)/hi_svdec.ko
+clean:
+	echo "clean over."

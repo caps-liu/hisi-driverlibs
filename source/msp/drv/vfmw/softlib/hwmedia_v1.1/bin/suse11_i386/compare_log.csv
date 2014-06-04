@@ -1,0 +1,41 @@
+first file , second file , compared result , err reason,Date/Time
+/media/disk-b/bevan/vp6/vp6_yuv/flv4_grandma_32x16_ms.yuv,/media/disk-b/bevan/vp6/on2_vp6/flv4_grandma_32x16_on2_dec.yuv,failed,the file size is not consistent,Wed Dec  1 02:47:08 2010
+/media/disk-b/bevan/vp6/vp6_yuv/vp60_grandma_32x16_ms.yuv,/media/disk-b/bevan/vp6/on2_vp6/vp60_grandma_32x16_on2_dec.yuv,failed,the file size is not consistent,Wed Dec  1 02:47:11 2010
+/media/disk-b/bevan/vp6/vp6_yuv/vp61_grandma_32x16_ms.yuv,/media/disk-b/bevan/vp6/on2_vp6/vp61_grandma_32x16_on2_dec.yuv,failed,the file size is not consistent,Wed Dec  1 02:47:13 2010
+/media/disk-b/bevan/vp6/vp6_yuv/vp62_grandma_32x16_ms.yuv,/media/disk-b/bevan/vp6/on2_vp6/vp62_grandma_32x16_on2_dec.yuv,failed,the file size is not consistent,Wed Dec  1 02:47:16 2010
+/media/disk-b/bevan/vp6/vp6_yuv/vp6f_grandma_32x16_ms.yuv,/media/disk-b/bevan/vp6/on2_vp6/vp6f_grandma_32x16_on2_dec.yuv,failed,the file size is not consistent,Wed Dec  1 02:47:19 2010
+/media/disk-b/bevan/vp6/vp6_yuv/flv4_transformer_p128x96.yuv_ms.yuv,/media/disk-b/bevan/vp6/on2_vp6/flv4_transformer_p128x96.yuv_on2_dec.yuv,passed, ,Wed Dec  1 02:47:25 2010
+/media/disk-b/bevan/vp6/vp6_yuv/vp60_transformer_p128x96.yuv_ms.yuv,/media/disk-b/bevan/vp6/on2_vp6/vp60_transformer_p128x96.yuv_on2_dec.yuv,passed, ,Wed Dec  1 02:47:32 2010
+/media/disk-b/bevan/vp6/vp6_yuv/vp61_transformer_p128x96.yuv_ms.yuv,/media/disk-b/bevan/vp6/on2_vp6/vp61_transformer_p128x96.yuv_on2_dec.yuv,passed, ,Wed Dec  1 02:47:40 2010
+/media/disk-b/bevan/vp6/vp6_yuv/vp62_transformer_p128x96.yuv_ms.yuv,/media/disk-b/bevan/vp6/on2_vp6/vp62_transformer_p128x96.yuv_on2_dec.yuv,passed, ,Wed Dec  1 02:47:46 2010
+/media/disk-b/bevan/vp6/vp6_yuv/vp6f_transformer_p128x96.yuv_ms.yuv,/media/disk-b/bevan/vp6/on2_vp6/vp6f_transformer_p128x96.yuv_on2_dec.yuv,passed, ,Wed Dec  1 02:47:53 2010
+/media/disk-b/bevan/vp6/vp6_yuv/flv4_mobile_176x144_128000_ms.yuv,/media/disk-b/bevan/vp6/on2_vp6/flv4_mobile_176x144_128000_on2_dec.yuv,passed, ,Wed Dec  1 02:47:56 2010
+/media/disk-b/bevan/vp6/vp6_yuv/vp60_mobile_176x144_128000_ms.yuv,/media/disk-b/bevan/vp6/on2_vp6/vp60_mobile_176x144_128000_on2_dec.yuv,passed, ,Wed Dec  1 02:47:59 2010
+/media/disk-b/bevan/vp6/vp6_yuv/vp61_mobile_176x144_128000_ms.yuv,/media/disk-b/bevan/vp6/on2_vp6/vp61_mobile_176x144_128000_on2_dec.yuv,passed, ,Wed Dec  1 02:48:02 2010
+/media/disk-b/bevan/vp6/vp6_yuv/vp62_mobile_176x144_128000_ms.yuv,/media/disk-b/bevan/vp6/on2_vp6/vp62_mobile_176x144_128000_on2_dec.yuv,passed, ,Wed Dec  1 02:48:04 2010
+/media/disk-b/bevan/vp6/vp6_yuv/vp6f_mobile_176x144_128000_ms.yuv,/media/disk-b/bevan/vp6/on2_vp6/vp6f_mobile_176x144_128000_on2_dec.yuv,passed, ,Wed Dec  1 02:48:07 2010
+/media/disk-b/bevan/vp6/vp6_yuv/flv4_football_352x240_256000_s16_ms.yuv,/media/disk-b/bevan/vp6/on2_vp6/flv4_football_352x240_256000_s16_on2_dec.yuv,passed, ,Wed Dec  1 02:48:08 2010
+/media/disk-b/bevan/vp6/vp6_yuv/vp60_football_352x240_256000_s16_ms.yuv,/media/disk-b/bevan/vp6/on2_vp6/vp60_football_352x240_256000_s16_on2_dec.yuv,passed, ,Wed Dec  1 02:48:09 2010
+/media/disk-b/bevan/vp6/vp6_yuv/vp61_football_352x240_256000_s16_ms.yuv,/media/disk-b/bevan/vp6/on2_vp6/vp61_football_352x240_256000_s16_on2_dec.yuv,passed, ,Wed Dec  1 02:48:11 2010
+/media/disk-b/bevan/vp6/vp6_yuv/vp62_football_352x240_256000_s16_ms.yuv,/media/disk-b/bevan/vp6/on2_vp6/vp62_football_352x240_256000_s16_on2_dec.yuv,passed, ,Wed Dec  1 02:48:12 2010
+/media/disk-b/bevan/vp6/vp6_yuv/vp6f_football_352x240_256000_s16_ms.yuv,/media/disk-b/bevan/vp6/on2_vp6/vp6f_football_352x240_256000_s16_on2_dec.yuv,passed, ,Wed Dec  1 02:48:13 2010
+/media/disk-b/bevan/vp6/vp6_yuv/flv4_football_352x288.yuv_ms.yuv,/media/disk-b/bevan/vp6/on2_vp6/flv4_football_352x288.yuv_on2_dec.yuv,passed, ,Wed Dec  1 02:48:14 2010
+/media/disk-b/bevan/vp6/vp6_yuv/vp60_football_352x288.yuv_ms.yuv,/media/disk-b/bevan/vp6/on2_vp6/vp60_football_352x288.yuv_on2_dec.yuv,passed, ,Wed Dec  1 02:48:15 2010
+/media/disk-b/bevan/vp6/vp6_yuv/vp61_football_352x288.yuv_ms.yuv,/media/disk-b/bevan/vp6/on2_vp6/vp61_football_352x288.yuv_on2_dec.yuv,passed, ,Wed Dec  1 02:48:16 2010
+/media/disk-b/bevan/vp6/vp6_yuv/vp62_football_352x288.yuv_ms.yuv,/media/disk-b/bevan/vp6/on2_vp6/vp62_football_352x288.yuv_on2_dec.yuv,passed, ,Wed Dec  1 02:48:17 2010
+/media/disk-b/bevan/vp6/vp6_yuv/vp6f_football_352x288.yuv_ms.yuv,/media/disk-b/bevan/vp6/on2_vp6/vp6f_football_352x288.yuv_on2_dec.yuv,passed, ,Wed Dec  1 02:48:18 2010
+/media/disk-b/bevan/vp6/vp6_yuv/flv4_football_720x480_1000000_ms.yuv,/media/disk-b/bevan/vp6/on2_vp6/flv4_football_720x480_1000000_on2_dec.yuv,passed, ,Wed Dec  1 02:48:26 2010
+/media/disk-b/bevan/vp6/vp6_yuv/vp60_football_720x480_1000000_ms.yuv,/media/disk-b/bevan/vp6/on2_vp6/vp60_football_720x480_1000000_on2_dec.yuv,passed, ,Wed Dec  1 02:48:34 2010
+/media/disk-b/bevan/vp6/vp6_yuv/vp61_football_720x480_1000000_ms.yuv,/media/disk-b/bevan/vp6/on2_vp6/vp61_football_720x480_1000000_on2_dec.yuv,passed, ,Wed Dec  1 02:48:42 2010
+/media/disk-b/bevan/vp6/vp6_yuv/vp62_football_720x480_1000000_ms.yuv,/media/disk-b/bevan/vp6/on2_vp6/vp62_football_720x480_1000000_on2_dec.yuv,passed, ,Wed Dec  1 02:48:51 2010
+/media/disk-b/bevan/vp6/vp6_yuv/vp6f_football_720x480_1000000_ms.yuv,/media/disk-b/bevan/vp6/on2_vp6/vp6f_football_720x480_1000000_on2_dec.yuv,passed, ,Wed Dec  1 02:48:59 2010
+/media/disk-b/bevan/vp6/vp6_yuv/flv4_sport_720x576_2000000_ms.yuv,/media/disk-b/bevan/vp6/on2_vp6/flv4_sport_720x576_2000000_on2_dec.yuv,passed, ,Wed Dec  1 02:49:39 2010
+/media/disk-b/bevan/vp6/vp6_yuv/vp60_sport_720x576_2000000_ms.yuv,/media/disk-b/bevan/vp6/on2_vp6/vp60_sport_720x576_2000000_on2_dec.yuv,failed,the file content is not consistent,Wed Dec  1 02:50:15 2010
+/media/disk-b/bevan/vp6/vp6_yuv/vp61_sport_720x576_2000000_ms.yuv,/media/disk-b/bevan/vp6/on2_vp6/vp61_sport_720x576_2000000_on2_dec.yuv,failed,the file content is not consistent,Wed Dec  1 02:50:57 2010
+/media/disk-b/bevan/vp6/vp6_yuv/vp62_sport_720x576_2000000_ms.yuv,/media/disk-b/bevan/vp6/on2_vp6/vp62_sport_720x576_2000000_on2_dec.yuv,passed, ,Wed Dec  1 02:51:37 2010
+/media/disk-b/bevan/vp6/vp6_yuv/vp6f_sport_720x576_2000000_ms.yuv,/media/disk-b/bevan/vp6/on2_vp6/vp6f_sport_720x576_2000000_on2_dec.yuv,passed, ,Wed Dec  1 02:52:18 2010
+/media/disk-b/bevan/vp6/vp6_yuv/flv4_mobcal_1280x720_4000000_ms.yuv,/media/disk-b/bevan/vp6/on2_vp6/flv4_mobcal_1280x720_4000000_on2_dec.yuv,failed,the file size is not consistent,Wed Dec  1 02:52:52 2010
+/media/disk-b/bevan/vp6/vp6_yuv/vp60_mobcal_1280x720_4000000_ms.yuv,/media/disk-b/bevan/vp6/on2_vp6/vp60_mobcal_1280x720_4000000_on2_dec.yuv,failed,the file size is not consistent,Wed Dec  1 02:53:17 2010
+/media/disk-b/bevan/vp6/vp6_yuv/vp61_mobcal_1280x720_4000000_ms.yuv,/media/disk-b/bevan/vp6/on2_vp6/vp61_mobcal_1280x720_4000000_on2_dec.yuv,failed,the file size is not consistent,Wed Dec  1 02:53:50 2010
+/media/disk-b/bevan/vp6/vp6_yuv/vp62_mobcal_1280x720_4000000_ms.yuv,/media/disk-b/bevan/vp6/on2_vp6/vp62_mobcal_1280x720_4000000_on2_dec.yuv,failed,the file size is not consistent,Wed Dec  1 02:54:23 2010
+/media/disk-b/bevan/vp6/vp6_yuv/vp6f_mobcal_1280x720_4000000_ms.yuv,/media/disk-b/bevan/vp6/on2_vp6/vp6f_mobcal_1280x720_4000000_on2_dec.yuv,failed,the file size is not consistent,Wed Dec  1 02:54:56 2010

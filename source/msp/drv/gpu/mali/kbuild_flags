@@ -1,0 +1,83 @@
+#===============================================================================
+# export variables
+#===============================================================================
+ifeq ($(CFG_HI_EXPORT_FLAG),)
+    ifneq ($(KERNELRELEASE),)
+        KERNEL_DIR := $(srctree)
+
+        SDK_DIR := $(KERNEL_DIR)/../../..
+    else
+        SDK_DIR := $(CURDIR)/../../../../..
+    endif
+
+    include $(SDK_DIR)/cfg.mak
+    include $(SDK_DIR)/base.mak
+endif
+
+#build in or not
+export CONFIG_MALI400=$(CFG_MSP_BUILDTYPE)
+
+export TARGET_PLATFORM=s40v200
+
+#SDK flags  
+export EXTRA_DEFINES += $(CFG_HI_KMOD_CFLAGS)
+
+#if use pmu, we need i2c driver
+ifeq ($(CFG_HI_PMU_DEVICE_SELECT),y)
+export EXTRA_DEFINES += -DCONFIG_HI_PMU_DEVICE_SELECT
+export EXTRA_DEFINES += -I$(COMMON_UNF_INCLUDE) -I$(COMMON_DRV_INCLUDE) -I$(MSP_DRV_INCLUDE)
+endif
+
+# Max GPU and OS shared memory size
+export EXTRA_DEFINES += -DCONFIG_GPU_MAX_SHARE_MEM_SIZE=$(CFG_HI_GPU_MAX_SHARE_MEM_SIZE)
+
+# Enable DMA Buffer map on attach
+export CONFIG_MALI_DMA_BUF_MAP_ON_ATTACH=y
+export EXTRA_DEFINES += -DCONFIG_MALI_DMA_BUF_MAP_ON_ATTACH
+
+#whether enable dvfs or not
+ifeq ($(CFG_HI_DVFS_GPU_SUPPORT),y)
+export CONFIG_GPU_DVFS_ENABLE=y
+export EXTRA_DEFINES += -DCONFIG_GPU_DVFS_ENABLE
+endif
+
+#if buildin, we should enable share interrupt and FAKE Driver here
+ifeq ($(CFG_MSP_BUILDTYPE),y)
+
+export CONFIG_MALI_SHARED_INTERRUPTS=y
+export EXTRA_DEFINES += -DCONFIG_MALI_SHARED_INTERRUPTS
+
+#hisi integration
+export EXTRA_DEFINES += -DMALI_FAKE_PLATFORM_DEVICE=1
+export MALI_PLATFORM_FILES = platform/$(TARGET_PLATFORM)/s40v200.c \
+                            platform/$(TARGET_PLATFORM)/s40v200_clk.c \
+                            platform/$(TARGET_PLATFORM)/s40v200_core_scaling.c \
+                            platform/$(TARGET_PLATFORM)/s40v200_pmu.c
+endif
+
+#debug or release
+ifeq ($(CFG_HI_GPU_DEBUG),y)
+BUILD=debug
+export CONFIG_MALI400_DEBUG=y
+else
+BUILD=release
+endif
+
+#profiling
+ifeq ($(CFG_HI_GPU_PROFILING), y)
+USING_PROFILING=1
+export CONFIG_MALI400_PROFILING=y
+export EXTRA_DEFINES += -DCONFIG_MALI400_PROFILING=1
+else
+USING_PROFILING=0
+endif
+
+#internal profiling
+ifeq ($(CFG_HI_GPU_INTERNAL_PROFILING), y)
+USING_INTERNAL_PROFILING=1
+export CONFIG_MALI400_INTERNAL_PROFILING=y
+export EXTRA_DEFINES += -DCONFIG_MALI400_INTERNAL_PROFILING=1
+else
+USING_INTERNAL_PROFILING=0
+endif
+

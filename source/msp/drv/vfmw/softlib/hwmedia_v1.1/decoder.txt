@@ -1,0 +1,460 @@
+ELF Header:
+  Magic:   7f 45 4c 46 01 01 01 00 00 00 00 00 00 00 00 00 
+  Class:                             ELF32
+  Data:                              2's complement, little endian
+  Version:                           1 (current)
+  OS/ABI:                            UNIX - System V
+  ABI Version:                       0
+  Type:                              EXEC (Executable file)
+  Machine:                           ARM
+  Version:                           0x1
+  Entry point address:               0x8cc8
+  Start of program headers:          52 (bytes into file)
+  Start of section headers:          20828 (bytes into file)
+  Flags:                             0x5000002, has entry point, Version5 EABI
+  Size of this header:               52 (bytes)
+  Size of program headers:           32 (bytes)
+  Number of program headers:         6
+  Size of section headers:           40 (bytes)
+  Number of section headers:         29
+  Section header string table index: 26
+
+Section Headers:
+  [Nr] Name              Type            Addr     Off    Size   ES Flg Lk Inf Al
+  [ 0]                   NULL            00000000 000000 000000 00      0   0  0
+  [ 1] .interp           PROGBITS        000080f4 0000f4 000014 00   A  0   0  1
+  [ 2] .hash             HASH            00008108 000108 000194 04   A  3   0  4
+  [ 3] .dynsym           DYNSYM          0000829c 00029c 0003e0 10   A  4   1  4
+  [ 4] .dynstr           STRTAB          0000867c 00067c 0002c6 00   A  0   0  1
+  [ 5] .rel.dyn          REL             00008944 000944 000018 08   A  3   0  4
+  [ 6] .rel.plt          REL             0000895c 00095c 000150 08   A  3   8  4
+  [ 7] .init             PROGBITS        00008aac 000aac 000010 00  AX  0   0  4
+  [ 8] .plt              PROGBITS        00008abc 000abc 00020c 04  AX  0   0  4
+  [ 9] .text             PROGBITS        00008cc8 000cc8 002a70 00  AX  0   0  4
+  [10] .fini             PROGBITS        0000b738 003738 000010 00  AX  0   0  4
+  [11] .rodata           PROGBITS        0000b748 003748 00108c 00   A  0   0  4
+  [12] .init_array       INIT_ARRAY      000147d4 0047d4 000004 00  WA  0   0  4
+  [13] .fini_array       FINI_ARRAY      000147d8 0047d8 000004 00  WA  0   0  4
+  [14] .jcr              PROGBITS        000147dc 0047dc 000004 00  WA  0   0  4
+  [15] .dynamic          DYNAMIC         000147e0 0047e0 0000f8 08  WA  4   0  4
+  [16] .got              PROGBITS        000148d8 0048d8 0000b4 04  WA  0   0  4
+  [17] .data             PROGBITS        0001498c 00498c 000060 00  WA  0   0  4
+  [18] .bss              NOBITS          000149f0 0049ec 00004c 00  WA  0   0  8
+  [19] .ARM.attributes   ARM_ATTRIBUTES  00000000 0049ec 000031 00      0   0  1
+  [20] .comment          PROGBITS        00000000 004a1d 0000e2 00      0   0  1
+  [21] .debug_aranges    PROGBITS        00000000 004b00 000060 00      0   0  8
+  [22] .debug_info       PROGBITS        00000000 004b60 000287 00      0   0  1
+  [23] .debug_abbrev     PROGBITS        00000000 004de7 00003c 00      0   0  1
+  [24] .debug_line       PROGBITS        00000000 004e23 000221 00      0   0  1
+  [25] .debug_frame      PROGBITS        00000000 005044 000020 00      0   0  4
+  [26] .shstrtab         STRTAB          00000000 005064 0000f6 00      0   0  1
+  [27] .symtab           SYMTAB          00000000 0055e4 000cd0 10     28  97  4
+  [28] .strtab           STRTAB          00000000 0062b4 00067c 00      0   0  1
+Key to Flags:
+  W (write), A (alloc), X (execute), M (merge), S (strings)
+  I (info), L (link order), G (group), x (unknown)
+  O (extra OS processing required) o (OS specific), p (processor specific)
+
+There are no section groups in this file.
+
+Program Headers:
+  Type           Offset   VirtAddr   PhysAddr   FileSiz MemSiz  Flg Align
+  PHDR           0x000034 0x00008034 0x00008034 0x000c0 0x000c0 R E 0x4
+  INTERP         0x0000f4 0x000080f4 0x000080f4 0x00014 0x00014 R   0x1
+      [Requesting program interpreter: /lib/ld-uClibc.so.0]
+  LOAD           0x000000 0x00008000 0x00008000 0x047d4 0x047d4 R E 0x8000
+  LOAD           0x0047d4 0x000147d4 0x000147d4 0x00218 0x00268 RW  0x8000
+  DYNAMIC        0x0047e0 0x000147e0 0x000147e0 0x000f8 0x000f8 RW  0x4
+  GNU_STACK      0x000000 0x00000000 0x00000000 0x00000 0x00000 RW  0x4
+
+ Section to Segment mapping:
+  Segment Sections...
+   00     
+   01     .interp 
+   02     .interp .hash .dynsym .dynstr .rel.dyn .rel.plt .init .plt .text .fini .rodata 
+   03     .init_array .fini_array .jcr .dynamic .got .data .bss 
+   04     .dynamic 
+   05     
+
+Dynamic section at offset 0x47e0 contains 26 entries:
+  Tag        Type                         Name/Value
+ 0x00000001 (NEEDED)                     Shared library: [libhwmedia.so]
+ 0x00000001 (NEEDED)                     Shared library: [libc.so.0]
+ 0x00000001 (NEEDED)                     Shared library: [libpthread.so.0]
+ 0x00000001 (NEEDED)                     Shared library: [libdl.so.0]
+ 0x00000001 (NEEDED)                     Shared library: [libm.so.0]
+ 0x0000000f (RPATH)                      Library rpath: [./]
+ 0x0000000c (INIT)                       0x8aac
+ 0x0000000d (FINI)                       0xb738
+ 0x00000019 (INIT_ARRAY)                 0x147d4
+ 0x0000001b (INIT_ARRAYSZ)               4 (bytes)
+ 0x0000001a (FINI_ARRAY)                 0x147d8
+ 0x0000001c (FINI_ARRAYSZ)               4 (bytes)
+ 0x00000004 (HASH)                       0x8108
+ 0x00000005 (STRTAB)                     0x867c
+ 0x00000006 (SYMTAB)                     0x829c
+ 0x0000000a (STRSZ)                      710 (bytes)
+ 0x0000000b (SYMENT)                     16 (bytes)
+ 0x00000015 (DEBUG)                      0x0
+ 0x00000003 (PLTGOT)                     0x148d8
+ 0x00000002 (PLTRELSZ)                   336 (bytes)
+ 0x00000014 (PLTREL)                     REL
+ 0x00000017 (JMPREL)                     0x895c
+ 0x00000011 (REL)                        0x8944
+ 0x00000012 (RELSZ)                      24 (bytes)
+ 0x00000013 (RELENT)                     8 (bytes)
+ 0x00000000 (NULL)                       0x0
+
+Relocation section '.rel.dyn' at offset 0x944 contains 3 entries:
+ Offset     Info    Type            Sym.Value  Sym. Name
+000149f0  00000414 R_ARM_COPY        000149f0   stdout
+000149f4  00002714 R_ARM_COPY        000149f4   stderr
+000149f8  00002814 R_ARM_COPY        000149f8   optopt
+
+Relocation section '.rel.plt' at offset 0x95c contains 42 entries:
+ Offset     Info    Type            Sym.Value  Sym. Name
+000148e4  00000116 R_ARM_JUMP_SLOT   00008ad0   strcpy
+000148e8  00000216 R_ARM_JUMP_SLOT   00008adc   IMedia_Viddec_Create
+000148ec  00000316 R_ARM_JUMP_SLOT   00008ae8   printf
+000148f0  00000516 R_ARM_JUMP_SLOT   00008af4   IMedia_OS_Milliseconds
+000148f4  00000616 R_ARM_JUMP_SLOT   00008b00   pthread_create
+000148f8  00000716 R_ARM_JUMP_SLOT   00008b0c   IMedia_Viddec_FramePar
+000148fc  00000916 R_ARM_JUMP_SLOT   00008b18   fgets
+00014900  00000a16 R_ARM_JUMP_SLOT   00008b24   memcpy
+00014904  00000b16 R_ARM_JUMP_SLOT   00008b30   puts
+00014908  00000c16 R_ARM_JUMP_SLOT   00008b3c   feof
+0001490c  00000d16 R_ARM_JUMP_SLOT   00008b48   malloc
+00014910  00001116 R_ARM_JUMP_SLOT   00008b54   fflush
+00014914  00001216 R_ARM_JUMP_SLOT   00008b60   abort
+00014918  00001416 R_ARM_JUMP_SLOT   00008b6c   fprintf
+0001491c  00001516 R_ARM_JUMP_SLOT   00008b78   fseek
+00014920  00001816 R_ARM_JUMP_SLOT   00008b84   IMedia_SetSysInfo
+00014924  00001a16 R_ARM_JUMP_SLOT   00008b90   strstr
+00014928  00001b16 R_ARM_JUMP_SLOT   00008b9c   signal
+0001492c  00001c16 R_ARM_JUMP_SLOT   00008ba8   sscanf
+00014930  00001d16 R_ARM_JUMP_SLOT   00008bb4   fread
+00014934  00001e16 R_ARM_JUMP_SLOT   00008bc0   __uClibc_main
+00014938  00001f16 R_ARM_JUMP_SLOT   00008bcc   IMedia_Viddec_QueryMem
+0001493c  00002216 R_ARM_JUMP_SLOT   00008bd8   memset
+00014940  00002316 R_ARM_JUMP_SLOT   00008be4   fclose
+00014944  00002516 R_ARM_JUMP_SLOT   00008bf0   pthread_mutex_unlock
+00014948  00002916 R_ARM_JUMP_SLOT   00008bfc   pthread_self
+0001494c  00002a16 R_ARM_JUMP_SLOT   00008c08   pthread_mutexattr_init
+00014950  00002b16 R_ARM_JUMP_SLOT   00008c14   IMedia_Viddec_Delete
+00014954  00002c16 R_ARM_JUMP_SLOT   00008c20   fwrite
+00014958  00002f16 R_ARM_JUMP_SLOT   00008c2c   pthread_mutex_destroy
+0001495c  00003016 R_ARM_JUMP_SLOT   00008c38   pthread_mutex_lock
+00014960  00003116 R_ARM_JUMP_SLOT   00008c44   exit
+00014964  00003216 R_ARM_JUMP_SLOT   00008c50   atoi
+00014968  00003316 R_ARM_JUMP_SLOT   00008c5c   pthread_mutex_init
+0001496c  00003416 R_ARM_JUMP_SLOT   00008c68   IMedia_Viddec_FrameDec
+00014970  00003516 R_ARM_JUMP_SLOT   00008c74   __assert
+00014974  00003616 R_ARM_JUMP_SLOT   00008c80   strchr
+00014978  00003816 R_ARM_JUMP_SLOT   00008c8c   IMedia_Viddec_Control
+0001497c  00003a16 R_ARM_JUMP_SLOT   00008c98   pthread_join
+00014980  00003b16 R_ARM_JUMP_SLOT   00008ca4   raise
+00014984  00003c16 R_ARM_JUMP_SLOT   00008cb0   free
+00014988  00003d16 R_ARM_JUMP_SLOT   00008cbc   fopen64
+
+There are no unwind sections in this file.
+
+Symbol table '.dynsym' contains 62 entries:
+   Num:    Value  Size Type    Bind   Vis      Ndx Name
+     0: 00000000     0 NOTYPE  LOCAL  DEFAULT  UND 
+     1: 00008ad0     0 FUNC    GLOBAL DEFAULT  UND strcpy
+     2: 00008adc     0 FUNC    GLOBAL DEFAULT  UND IMedia_Viddec_Create
+     3: 00008ae8     0 FUNC    GLOBAL DEFAULT  UND printf
+     4: 000149f0     4 OBJECT  GLOBAL DEFAULT   18 stdout
+     5: 00008af4     0 FUNC    GLOBAL DEFAULT  UND IMedia_OS_Milliseconds
+     6: 00008b00     0 FUNC    GLOBAL DEFAULT  UND pthread_create
+     7: 00008b0c     0 FUNC    GLOBAL DEFAULT  UND IMedia_Viddec_FrameParse
+     8: 00014a3c     0 NOTYPE  GLOBAL DEFAULT  ABS _bss_end__
+     9: 00008b18     0 FUNC    GLOBAL DEFAULT  UND fgets
+    10: 00008b24     0 FUNC    GLOBAL DEFAULT  UND memcpy
+    11: 00008b30     0 FUNC    GLOBAL DEFAULT  UND puts
+    12: 00008b3c     0 FUNC    GLOBAL DEFAULT  UND feof
+    13: 00008b48     0 FUNC    GLOBAL DEFAULT  UND malloc
+    14: 00014a38     4 OBJECT  GLOBAL DEFAULT   18 optarg
+    15: 000149ec     0 NOTYPE  GLOBAL DEFAULT  ABS __bss_start__
+    16: 00014994     4 OBJECT  GLOBAL DEFAULT   17 opterr
+    17: 00008b54     0 FUNC    GLOBAL DEFAULT  UND fflush
+    18: 00008b60     0 FUNC    GLOBAL DEFAULT  UND abort
+    19: 00008aac     0 FUNC    GLOBAL DEFAULT    7 _init
+    20: 00008b6c     0 FUNC    GLOBAL DEFAULT  UND fprintf
+    21: 00008b78     0 FUNC    GLOBAL DEFAULT  UND fseek
+    22: 00014998     4 OBJECT  GLOBAL DEFAULT   17 optind
+    23: 00014a3c     0 NOTYPE  GLOBAL DEFAULT  ABS __bss_end__
+    24: 00008b84     0 FUNC    GLOBAL DEFAULT  UND IMedia_SetSysInfo
+    25: 00008cc8    80 FUNC    GLOBAL DEFAULT    9 _start
+    26: 00008b90     0 FUNC    GLOBAL DEFAULT  UND strstr
+    27: 00008b9c     0 FUNC    GLOBAL DEFAULT  UND signal
+    28: 00008ba8     0 FUNC    GLOBAL DEFAULT  UND sscanf
+    29: 00008bb4     0 FUNC    GLOBAL DEFAULT  UND fread
+    30: 00008bc0     0 FUNC    GLOBAL DEFAULT  UND __uClibc_main
+    31: 00008bcc     0 FUNC    GLOBAL DEFAULT  UND IMedia_Viddec_QueryMemSiz
+    32: 000149ec     0 NOTYPE  GLOBAL DEFAULT  ABS __bss_start
+    33: 00008e88   584 FUNC    GLOBAL DEFAULT    9 getopt
+    34: 00008bd8     0 FUNC    GLOBAL DEFAULT  UND memset
+    35: 00008be4     0 FUNC    GLOBAL DEFAULT  UND fclose
+    36: 00014a3c     0 NOTYPE  GLOBAL DEFAULT  ABS __end__
+    37: 00008bf0     0 FUNC    GLOBAL DEFAULT  UND pthread_mutex_unlock
+    38: 0000b738     0 FUNC    GLOBAL DEFAULT   10 _fini
+    39: 000149f4     4 OBJECT  GLOBAL DEFAULT   18 stderr
+    40: 000149f8     4 OBJECT  GLOBAL DEFAULT   18 optopt
+    41: 00008bfc     0 FUNC    GLOBAL DEFAULT  UND pthread_self
+    42: 00008c08     0 FUNC    GLOBAL DEFAULT  UND pthread_mutexattr_init
+    43: 00008c14     0 FUNC    GLOBAL DEFAULT  UND IMedia_Viddec_Delete
+    44: 00008c20     0 FUNC    GLOBAL DEFAULT  UND fwrite
+    45: 000149ec     0 NOTYPE  GLOBAL DEFAULT  ABS _edata
+    46: 00014a3c     0 NOTYPE  GLOBAL DEFAULT  ABS _end
+    47: 00008c2c     0 FUNC    GLOBAL DEFAULT  UND pthread_mutex_destroy
+    48: 00008c38     0 FUNC    GLOBAL DEFAULT  UND pthread_mutex_lock
+    49: 00008c44     0 FUNC    GLOBAL DEFAULT  UND exit
+    50: 00008c50     0 FUNC    GLOBAL DEFAULT  UND atoi
+    51: 00008c5c     0 FUNC    GLOBAL DEFAULT  UND pthread_mutex_init
+    52: 00008c68     0 FUNC    GLOBAL DEFAULT  UND IMedia_Viddec_FrameDecode
+    53: 00008c74     0 FUNC    GLOBAL DEFAULT  UND __assert
+    54: 00008c80     0 FUNC    GLOBAL DEFAULT  UND strchr
+    55: 0001498c     0 NOTYPE  GLOBAL DEFAULT   17 __data_start
+    56: 00008c8c     0 FUNC    GLOBAL DEFAULT  UND IMedia_Viddec_Control
+    57: 00000000     0 NOTYPE  WEAK   DEFAULT  UND _Jv_RegisterClasses
+    58: 00008c98     0 FUNC    GLOBAL DEFAULT  UND pthread_join
+    59: 00008ca4     0 FUNC    GLOBAL DEFAULT  UND raise
+    60: 00008cb0     0 FUNC    GLOBAL DEFAULT  UND free
+    61: 00008cbc     0 FUNC    GLOBAL DEFAULT  UND fopen64
+
+Symbol table '.symtab' contains 205 entries:
+   Num:    Value  Size Type    Bind   Vis      Ndx Name
+     0: 00000000     0 NOTYPE  LOCAL  DEFAULT  UND 
+     1: 000080f4     0 SECTION LOCAL  DEFAULT    1 
+     2: 00008108     0 SECTION LOCAL  DEFAULT    2 
+     3: 0000829c     0 SECTION LOCAL  DEFAULT    3 
+     4: 0000867c     0 SECTION LOCAL  DEFAULT    4 
+     5: 00008944     0 SECTION LOCAL  DEFAULT    5 
+     6: 0000895c     0 SECTION LOCAL  DEFAULT    6 
+     7: 00008aac     0 SECTION LOCAL  DEFAULT    7 
+     8: 00008abc     0 SECTION LOCAL  DEFAULT    8 
+     9: 00008cc8     0 SECTION LOCAL  DEFAULT    9 
+    10: 0000b738     0 SECTION LOCAL  DEFAULT   10 
+    11: 0000b748     0 SECTION LOCAL  DEFAULT   11 
+    12: 000147d4     0 SECTION LOCAL  DEFAULT   12 
+    13: 000147d8     0 SECTION LOCAL  DEFAULT   13 
+    14: 000147dc     0 SECTION LOCAL  DEFAULT   14 
+    15: 000147e0     0 SECTION LOCAL  DEFAULT   15 
+    16: 000148d8     0 SECTION LOCAL  DEFAULT   16 
+    17: 0001498c     0 SECTION LOCAL  DEFAULT   17 
+    18: 000149f0     0 SECTION LOCAL  DEFAULT   18 
+    19: 00000000     0 SECTION LOCAL  DEFAULT   19 
+    20: 00000000     0 SECTION LOCAL  DEFAULT   20 
+    21: 00000000     0 SECTION LOCAL  DEFAULT   21 
+    22: 00000000     0 SECTION LOCAL  DEFAULT   22 
+    23: 00000000     0 SECTION LOCAL  DEFAULT   23 
+    24: 00000000     0 SECTION LOCAL  DEFAULT   24 
+    25: 00000000     0 SECTION LOCAL  DEFAULT   25 
+    26: 00000000     0 FILE    LOCAL  DEFAULT  ABS initfini.c
+    27: 00008aac     0 NOTYPE  LOCAL  DEFAULT    7 $a
+    28: 0000b738     0 NOTYPE  LOCAL  DEFAULT   10 $a
+    29: 00008d04     0 NOTYPE  LOCAL  DEFAULT    9 $t
+    30: 00000000     0 FILE    LOCAL  DEFAULT  ABS initfini.c
+    31: 00008ab8     0 NOTYPE  LOCAL  DEFAULT    7 $a
+    32: 0000b744     0 NOTYPE  LOCAL  DEFAULT   10 $a
+    33: 00000000     0 FILE    LOCAL  DEFAULT  ABS crtstuff.c
+    34: 000147dc     0 OBJECT  LOCAL  DEFAULT   14 __JCR_LIST__
+    35: 00014990     0 NOTYPE  LOCAL  DEFAULT   17 $d
+    36: 00008d40     0 NOTYPE  LOCAL  DEFAULT    9 $a
+    37: 00008d40     0 FUNC    LOCAL  DEFAULT    9 __do_global_dtors_aux
+    38: 00008d58     0 NOTYPE  LOCAL  DEFAULT    9 $d
+    39: 000149fc     1 OBJECT  LOCAL  DEFAULT   18 completed.5436
+    40: 000147d8     0 NOTYPE  LOCAL  DEFAULT   13 $d
+    41: 000147d8     0 OBJECT  LOCAL  DEFAULT   13 __do_global_dtors_aux_fin
+    42: 00008d5c     0 NOTYPE  LOCAL  DEFAULT    9 $a
+    43: 00008d5c     0 FUNC    LOCAL  DEFAULT    9 frame_dummy
+    44: 00008d84     0 NOTYPE  LOCAL  DEFAULT    9 $d
+    45: 000147d4     0 NOTYPE  LOCAL  DEFAULT   12 $d
+    46: 000147d4     0 OBJECT  LOCAL  DEFAULT   12 __frame_dummy_init_array_
+    47: 000149fc     0 NOTYPE  LOCAL  DEFAULT   18 $d
+    48: 00000000     0 FILE    LOCAL  DEFAULT  ABS getopt.c
+    49: 00008d8c     0 NOTYPE  LOCAL  DEFAULT    9 $a
+    50: 00008d8c   252 FUNC    LOCAL  DEFAULT    9 optiserr
+    51: 0000b748     0 NOTYPE  LOCAL  DEFAULT   11 $d
+    52: 0000b748     7 OBJECT  LOCAL  DEFAULT   11 __PRETTY_FUNCTION__.2621
+    53: 00014994     0 NOTYPE  LOCAL  DEFAULT   17 $d
+    54: 0000b750     0 NOTYPE  LOCAL  DEFAULT   11 $d
+    55: 00014a00     0 NOTYPE  LOCAL  DEFAULT   18 $d
+    56: 00014a04     4 OBJECT  LOCAL  DEFAULT   18 dash.2619
+    57: 00014a08     4 OBJECT  LOCAL  DEFAULT   18 optchr.2618
+    58: 00000000     0 FILE    LOCAL  DEFAULT  ABS main.c
+    59: 000090d0     0 NOTYPE  LOCAL  DEFAULT    9 $a
+    60: 000090d0    52 FUNC    LOCAL  DEFAULT    9 hw_thread_entry
+    61: 00009194  1120 FUNC    LOCAL  DEFAULT    9 DecControl
+    62: 000091c4     0 NOTYPE  LOCAL  DEFAULT    9 $d
+    63: 000091f0     0 NOTYPE  LOCAL  DEFAULT    9 $a
+    64: 000094f0     0 NOTYPE  LOCAL  DEFAULT    9 $d
+    65: 000094f4     0 NOTYPE  LOCAL  DEFAULT    9 $a
+    66: 000095f4  1156 FUNC    LOCAL  DEFAULT    9 PictureStore
+    67: 00009a78   140 FUNC    LOCAL  DEFAULT    9 AppDealSignal
+    68: 00009ba8  3420 FUNC    LOCAL  DEFAULT    9 DecThreadFxn
+    69: 0000a9bc     0 NOTYPE  LOCAL  DEFAULT    9 $d
+    70: 0000aa94     0 NOTYPE  LOCAL  DEFAULT    9 $a
+    71: 0001499c     0 NOTYPE  LOCAL  DEFAULT   17 $d
+    72: 0000b7fc     0 NOTYPE  LOCAL  DEFAULT   11 $d
+    73: 00014a10     0 NOTYPE  LOCAL  DEFAULT   18 $d
+    74: 00014a10     4 OBJECT  LOCAL  DEFAULT   18 iDebugLevel
+    75: 00014a20     8 OBJECT  LOCAL  DEFAULT   18 ullDecTotTime
+    76: 00014a28     4 OBJECT  LOCAL  DEFAULT   18 g_exit_flag
+    77: 00014a30     8 OBJECT  LOCAL  DEFAULT   18 ullDecTime
+    78: 0000b298     0 NOTYPE  LOCAL  DEFAULT    9 $a
+    79: 0000b2a0     0 NOTYPE  LOCAL  DEFAULT    9 .divsi3_nodiv0
+    80: 00000000     0 NOTYPE  LOCAL  DEFAULT  ABS shift
+    81: 00000010     0 NOTYPE  LOCAL  DEFAULT   25 $d
+    82: 0000000c     0 NOTYPE  LOCAL  DEFAULT   21 $d
+    83: 0000b4d8     0 NOTYPE  LOCAL  DEFAULT    9 $a
+    84: 0000002c     0 NOTYPE  LOCAL  DEFAULT   21 $d
+    85: 0000b728     0 NOTYPE  LOCAL  DEFAULT    9 $a
+    86: 0000004c     0 NOTYPE  LOCAL  DEFAULT   21 $d
+    87: 00000000     0 FILE    LOCAL  DEFAULT  ABS crtstuff.c
+    88: 000147dc     0 NOTYPE  LOCAL  DEFAULT   14 $d
+    89: 000147dc     0 OBJECT  LOCAL  DEFAULT   14 __JCR_END__
+    90: 000147e0     0 OBJECT  LOCAL  HIDDEN   15 _DYNAMIC
+    91: 000148d8     0 OBJECT  LOCAL  HIDDEN   16 _GLOBAL_OFFSET_TABLE_
+    92: 00008cc8     0 NOTYPE  LOCAL  DEFAULT    9 $d
+    93: 0001498c     0 NOTYPE  LOCAL  DEFAULT   17 $d
+    94: 00008abc     0 NOTYPE  LOCAL  DEFAULT    8 $a
+    95: 00008acc     0 NOTYPE  LOCAL  DEFAULT    8 $d
+    96: 00008ad0     0 NOTYPE  LOCAL  DEFAULT    8 $a
+    97: 00008ad0     0 FUNC    GLOBAL DEFAULT  UND strcpy
+    98: 00008adc     0 FUNC    GLOBAL DEFAULT  UND IMedia_Viddec_Create
+    99: 000149ac    36 OBJECT  GLOBAL DEFAULT   17 pszCodecName
+   100: 00008ae8     0 FUNC    GLOBAL DEFAULT  UND printf
+   101: 000149f0     4 OBJECT  GLOBAL DEFAULT   18 stdout
+   102: 00008af4     0 FUNC    GLOBAL DEFAULT  UND IMedia_OS_Milliseconds
+   103: 00008b00     0 FUNC    GLOBAL DEFAULT  UND pthread_create
+   104: 00008d0d     4 FUNC    WEAK   HIDDEN    9 _call_via_r2
+   105: 00008b0c     0 FUNC    GLOBAL DEFAULT  UND IMedia_Viddec_FrameParse
+   106: 00014a3c     0 NOTYPE  GLOBAL DEFAULT  ABS _bss_end__
+   107: 00008d1d     4 FUNC    WEAK   HIDDEN    9 _call_via_r6
+   108: 0000b4e4   400 FUNC    GLOBAL HIDDEN    9 __aeabi_fadd
+   109: 0000b4e0   404 FUNC    GLOBAL HIDDEN    9 __subsf3
+   110: 00008b18     0 FUNC    GLOBAL DEFAULT  UND fgets
+   111: 00008b24     0 FUNC    GLOBAL DEFAULT  UND memcpy
+   112: 00008b30     0 FUNC    GLOBAL DEFAULT  UND puts
+   113: 00008d19     4 FUNC    WEAK   HIDDEN    9 _call_via_r5
+   114: 00008b3c     0 FUNC    GLOBAL DEFAULT  UND feof
+   115: 00008b48     0 FUNC    GLOBAL DEFAULT  UND malloc
+   116: 0000b67c    32 FUNC    GLOBAL HIDDEN    9 __aeabi_i2f
+   117: 00014a38     4 OBJECT  GLOBAL DEFAULT   18 optarg
+   118: 000149ec     0 NOTYPE  GLOBAL DEFAULT  ABS __bss_start__
+   119: 00014990     0 OBJECT  GLOBAL HIDDEN   17 __dso_handle
+   120: 00014994     4 OBJECT  GLOBAL DEFAULT   17 opterr
+   121: 00009b04   164 FUNC    GLOBAL DEFAULT    9 print_stack_info
+   122: 00008b54     0 FUNC    GLOBAL DEFAULT  UND fflush
+   123: 00008b60     0 FUNC    GLOBAL DEFAULT  UND abort
+   124: 00009174    32 FUNC    GLOBAL DEFAULT    9 AppFree
+   125: 00008aac     0 FUNC    GLOBAL DEFAULT    7 _init
+   126: 00014a14    12 OBJECT  GLOBAL DEFAULT   18 g_stMemTab
+   127: 0000b4e0   404 FUNC    GLOBAL HIDDEN    9 __aeabi_fsub
+   128: 0000b6ac   124 FUNC    GLOBAL HIDDEN    9 __floatdisf
+   129: 00008b6c     0 FUNC    GLOBAL DEFAULT  UND fprintf
+   130: 0000b298     0 FUNC    GLOBAL HIDDEN    9 __aeabi_idiv
+   131: 00008b78     0 FUNC    GLOBAL DEFAULT  UND fseek
+   132: 00008d11     4 FUNC    WEAK   HIDDEN    9 _call_via_r3
+   133: 00008d31     4 FUNC    WEAK   HIDDEN    9 _call_via_fp
+   134: 00008d25     4 FUNC    WEAK   HIDDEN    9 _call_via_r8
+   135: 00014998     4 OBJECT  GLOBAL DEFAULT   17 optind
+   136: 00014a3c     0 NOTYPE  GLOBAL DEFAULT  ABS __bss_end__
+   137: 00008b84     0 FUNC    GLOBAL DEFAULT  UND IMedia_SetSysInfo
+   138: 00008cc8    80 FUNC    GLOBAL DEFAULT    9 _start
+   139: 00008b90     0 FUNC    GLOBAL DEFAULT  UND strstr
+   140: 00008d21     4 FUNC    WEAK   HIDDEN    9 _call_via_r7
+   141: 00008b9c     0 FUNC    GLOBAL DEFAULT  UND signal
+   142: 0000b67c    32 FUNC    GLOBAL HIDDEN    9 __floatsisf
+   143: 00008d05     4 FUNC    WEAK   HIDDEN    9 _call_via_r0
+   144: 0000b69c   140 FUNC    GLOBAL HIDDEN    9 __floatundisf
+   145: 00008ba8     0 FUNC    GLOBAL DEFAULT  UND sscanf
+   146: 0000b728    16 FUNC    WEAK   HIDDEN    9 __aeabi_ldiv0
+   147: 0000b674    40 FUNC    GLOBAL HIDDEN    9 __aeabi_ui2f
+   148: 00008bb4     0 FUNC    GLOBAL DEFAULT  UND fread
+   149: 00008bc0     0 FUNC    GLOBAL DEFAULT  UND __uClibc_main
+   150: 00008bcc     0 FUNC    GLOBAL DEFAULT  UND IMedia_Viddec_QueryMemSiz
+   151: 000149ec     0 NOTYPE  GLOBAL DEFAULT  ABS __bss_start
+   152: 00008e88   584 FUNC    GLOBAL DEFAULT    9 getopt
+   153: 00008d2d     4 FUNC    WEAK   HIDDEN    9 _call_via_sl
+   154: 00008bd8     0 FUNC    GLOBAL DEFAULT  UND memset
+   155: 0000a904  2452 FUNC    GLOBAL DEFAULT    9 main
+   156: 0000b6ac   124 FUNC    GLOBAL HIDDEN    9 __aeabi_l2f
+   157: 00009150    36 FUNC    GLOBAL DEFAULT    9 AppMalloc
+   158: 00008be4     0 FUNC    GLOBAL DEFAULT  UND fclose
+   159: 0000910c    68 FUNC    GLOBAL DEFAULT    9 AppPrintf
+   160: 00014a3c     0 NOTYPE  GLOBAL DEFAULT  ABS __end__
+   161: 0000b69c   140 FUNC    GLOBAL HIDDEN    9 __aeabi_ul2f
+   162: 0000b298   544 FUNC    GLOBAL HIDDEN    9 __divsi3
+   163: 00008bf0     0 FUNC    GLOBAL DEFAULT  UND pthread_mutex_unlock
+   164: 0001498c     0 NOTYPE  WEAK   DEFAULT   17 data_start
+   165: 0000b738     0 FUNC    GLOBAL DEFAULT   10 _fini
+   166: 00008d39     4 FUNC    WEAK   HIDDEN    9 _call_via_sp
+   167: 000149d0    28 OBJECT  GLOBAL DEFAULT   17 aiCpuMask
+   168: 00014a00     4 OBJECT  GLOBAL DEFAULT   18 optreset
+   169: 0001499c    16 OBJECT  GLOBAL DEFAULT   17 pszMsg
+   170: 0000b4d8   412 FUNC    GLOBAL HIDDEN    9 __aeabi_frsub
+   171: 000149f4     4 OBJECT  GLOBAL DEFAULT   18 stderr
+   172: 000149f8     4 OBJECT  GLOBAL DEFAULT   18 optopt
+   173: 00008bfc     0 FUNC    GLOBAL DEFAULT  UND pthread_self
+   174: 00008c08     0 FUNC    GLOBAL DEFAULT  UND pthread_mutexattr_init
+   175: 00008c14     0 FUNC    GLOBAL DEFAULT  UND IMedia_Viddec_Delete
+   176: 00008c20     0 FUNC    GLOBAL DEFAULT  UND fwrite
+   177: 000149ec     0 NOTYPE  GLOBAL DEFAULT  ABS _edata
+   178: 00014a3c     0 NOTYPE  GLOBAL DEFAULT  ABS _end
+   179: 00008c2c     0 FUNC    GLOBAL DEFAULT  UND pthread_mutex_destroy
+   180: 00009108     4 FUNC    GLOBAL DEFAULT    9 AppSysTime
+   181: 00008c38     0 FUNC    GLOBAL DEFAULT  UND pthread_mutex_lock
+   182: 00008d29     4 FUNC    WEAK   HIDDEN    9 _call_via_r9
+   183: 00008d15     4 FUNC    WEAK   HIDDEN    9 _call_via_r4
+   184: 00008c44     0 FUNC    GLOBAL DEFAULT  UND exit
+   185: 0000b674    40 FUNC    GLOBAL HIDDEN    9 __floatunsisf
+   186: 00008c50     0 FUNC    GLOBAL DEFAULT  UND atoi
+   187: 0000b728    16 FUNC    WEAK   HIDDEN    9 __aeabi_idiv0
+   188: 00009104     4 FUNC    GLOBAL DEFAULT    9 print_trace
+   189: 00008d09     4 FUNC    WEAK   HIDDEN    9 _call_via_r1
+   190: 00008c5c     0 FUNC    GLOBAL DEFAULT  UND pthread_mutex_init
+   191: 00008c68     0 FUNC    GLOBAL DEFAULT  UND IMedia_Viddec_FrameDecode
+   192: 00008c74     0 FUNC    GLOBAL DEFAULT  UND __assert
+   193: 00008c80     0 FUNC    GLOBAL DEFAULT  UND strchr
+   194: 0001498c     0 NOTYPE  GLOBAL DEFAULT   17 __data_start
+   195: 00008d35     4 FUNC    WEAK   HIDDEN    9 _call_via_ip
+   196: 00008c8c     0 FUNC    GLOBAL DEFAULT  UND IMedia_Viddec_Control
+   197: 00000000     0 NOTYPE  WEAK   DEFAULT  UND _Jv_RegisterClasses
+   198: 00008d3d     4 FUNC    WEAK   HIDDEN    9 _call_via_lr
+   199: 00008c98     0 FUNC    GLOBAL DEFAULT  UND pthread_join
+   200: 0000b4b8    32 FUNC    GLOBAL HIDDEN    9 __aeabi_idivmod
+   201: 0000b4e4   400 FUNC    GLOBAL HIDDEN    9 __addsf3
+   202: 00008ca4     0 FUNC    GLOBAL DEFAULT  UND raise
+   203: 00008cb0     0 FUNC    GLOBAL DEFAULT  UND free
+   204: 00008cbc     0 FUNC    GLOBAL DEFAULT  UND fopen64
+
+Histogram for bucket list length (total of 37 buckets):
+ Length  Number     % of total  Coverage
+      0  8          ( 21.6%)
+      1  13         ( 35.1%)     21.3%
+      2  6          ( 16.2%)     41.0%
+      3  5          ( 13.5%)     65.6%
+      4  4          ( 10.8%)     91.8%
+      5  1          (  2.7%)    100.0%
+
+No version information found in this file.
+Attribute Section: aeabi
+File Attributes
+  Tag_CPU_name: "7-A"
+  Tag_CPU_arch: v7
+  Tag_CPU_arch_profile: Application
+  Tag_ARM_ISA_use: Yes
+  Tag_THUMB_ISA_use: Thumb-2
+  Tag_VFP_arch: VFPv3
+  Tag_NEON_arch: NEONv1
+  Tag_ABI_PCS_wchar_t: 4
+  Tag_ABI_FP_denormal: Needed
+  Tag_ABI_FP_exceptions: Needed
+  Tag_ABI_FP_number_model: IEEE 754
+  Tag_ABI_align8_needed: Yes
+  Tag_ABI_enum_size: int
+  Tag_ABI_HardFP_use: SP and DP
+  Tag_unknown_44: 1 (0x1)

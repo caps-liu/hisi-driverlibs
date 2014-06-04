@@ -1,0 +1,9 @@
+rm -rf DirectFB-1.4.2
+rm -rf DirectFB-examples-1.0.0
+rm -rf freetype-2.3.12
+rm -rf jpeg
+rm -rf libpng-1.4.0
+rm -rf zlib-1.2.3
+rm -rf directfb
+rm -rf sample
+rm -rf linux-fusion-8.2.1

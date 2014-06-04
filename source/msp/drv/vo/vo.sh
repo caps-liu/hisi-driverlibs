@@ -1,0 +1,3 @@
+#!/bin/bash
+
+make CFG_HI_CHIP_TYPE=$1 CFG_MSP_BUILDTYPE=m A=1;make clean CFG_HI_CHIP_TYPE=$1 CFG_MSP_BUILDTYPE=m

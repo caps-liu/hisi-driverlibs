@@ -1,0 +1,13 @@
+include kbuild_flags
+#===============================================================================
+# export variables
+#===============================================================================
+USING_UMP:=0
+MALI_SHARED_INTERRUPTS:=1
+
+# Location of default kernels
+KDIR-$(TARGET_PLATFORM):=$(LINUX_DIR)
+
+# Name of platform directory with platform specific code (should be built into kernel on a real system) 
+MALI_PLATFORM-$(TARGET_PLATFORM)=s40v200
+

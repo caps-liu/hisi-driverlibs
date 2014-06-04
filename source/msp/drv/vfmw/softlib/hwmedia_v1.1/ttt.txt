@@ -1,0 +1,5 @@
+include __aeabi_i2f .o
+./bin/arm-hisi_kernel/imedia.o
+./hwmedia.o
+./imedia.o
+./src/hwdec/hwcodec/dsputil.o

@@ -269,6 +269,7 @@ HI_S32 HI_MPI_MMZ_GetPhyAddr(HI_VOID *pRefAddr, HI_U32 *pu32PhyAddr, HI_U32 *pu3
     ret = ioctl(g_s32fd, IOC_MMB_USER_GETPHYADDR, &mmi);
     if (ret)
     {
+		printf("\e[031mHI_MPI_MMZ_GetPhyAddr failed\e[0m\n");
         return -1;
     }
     if (pu32PhyAddr)

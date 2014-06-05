@@ -380,13 +380,15 @@ static struct mmb_info* get_mmbinfo_byusraddr(unsigned long addr, struct mmz_use
 
 	list_for_each_entry(p, &pmu->list, list) {
 		if( ((unsigned long)p->mapped <= addr) && 
-			((unsigned long)p->mapped + p->size > addr)) {
-			/*(p->pid == current->pid) )*/
+			((unsigned long)p->mapped + p->size > addr) ) {
+			/*&&(p->pid == current->pid) )*/
 				break;
 		}
 	}
-	if( &p->list == &pmu->list)
+	if( &p->list == &pmu->list){
+		printk("get_mmbinfo_buusraddr:(null):%ld\n",addr);
 		return NULL;
+	}
 
 	return p;
 }
@@ -400,8 +402,10 @@ static int ioctl_mmb_user_getphyaddr(struct file *file, unsigned int iocmd, stru
 	struct mmz_userdev_info *pmu = file->private_data;
 
 	p = get_mmbinfo_byusraddr((unsigned long)pmi->mapped, pmu);
-	if ( p ==NULL)
+	if ( p ==NULL) {
+		printk("not find buffer\n");
 		return -EPERM;
+	}
 
 	if(!(p->map_ref>0 && p->mmb_ref>0)) {
 		error("mmb<%s> has invalid refer: map_ref = %d, mmb_ref = %d.\n", p->mmb->name, p->map_ref, p->mmb_ref);

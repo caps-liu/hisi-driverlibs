@@ -31,7 +31,7 @@ This module contains the class definition for openMAX decoder component.
 #define DEF_MAX_IN_BUF_CNT                 (6)
 #define DEF_MIN_IN_BUF_CNT                 (4) //4
 
-#define DEF_MAX_OUT_BUF_CNT                (19) 
+#define DEF_MAX_OUT_BUF_CNT                (10) 
 #define DEF_MIN_OUT_BUF_CNT                (8)
 
 #define OMX_VDEC_COMP_NAME                 "OMX.hisi.video.decoder"
